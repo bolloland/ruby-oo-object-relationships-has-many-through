@@ -28,5 +28,11 @@ class Waiter
         end
         best_tipped_meal.customer
     end
+
+    def my_regular
+        my_custies = []
+        my_custies << meals.each {|meal| meal.customer.name}
+binding.pry
+    end
     
 end
